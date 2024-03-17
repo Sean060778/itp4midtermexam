@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attractions</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  header, footer {
+    background-color: #266803;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    font-weight: light;
+  }
+  header h1, header img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  nav {
+    background-color: #266803;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  nav a:hover {
+    background-color: #266803;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 45px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 10px; /* Added grid gap */
+  }
+  .card {
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Added padding */
+  }
+
+  .card img {
+    width: 400px; /* Fixed width for uniform size */
+    height: 400px; /* Fixed height for uniform size */
+    object-fit: cover; /* Ensures the image fills the container while maintaining its aspect ratio */
+    border: 5px solid #fff; /* Increased border size for better readability */
+    border-radius: 40px; /* Matches the border radius of the card */
+  }
+
+  .card__title {
+    color: #1a43bf;
+    font-weight: bold;
+    font-size: 1.5em; /* Increased font size */
+    margin-bottom: 10px;
+  }
+
+  .card__description {
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  footer {
+    margin-top: auto;
+    margin-top: 20px;
+    background-color: #266803;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* Scroll to top button */
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #266803;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+  }
+
+  #scrollToTopBtn:hover {
+    background-color: #266803;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Tagaytay City</h1>
+  <img src="Seal_of_Tagaytay_City_Logo.png" alt="Tagaytay City Logo" style="height: 50px;">
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="attractions.html">Attractions</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<h2 style="text-align: center; margin-top: 20px;">Things to Do in Tagaytay City</h2> <!-- Added title -->
+
+<div class="container">
+  <div class="card">
+    <img src="TaalVolcano.jpg" alt="Taal Volcano">
+    <div class="card__content">
+      <p class="card__title">See the Breathtaking Taal Volcano</p>
+      <p class="card__description">Tagaytay is particularly famous for the Taal Volcano. Although often described as one of the smallest volcanoes in the world, it is actually one of the largest. The entire Tagaytay ridge is the crater's edge and the Taal Lake is the caldera of the volcano. The little 'volcano' you see in the centre of the lake is merely a 'vent'! Taal volcano is known as the largest island within a lake on an island within a lake on an island!</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="Picnic Grove.jpg" alt="Picnic Grove">
+    <div class="card__content">
+      <p class="card__title">Visit the Picnic Grove</p>
+      <p class="card__description">Picnic Grove is a beautiful park situated on a hillside, offering picturesque views of Taal Lake and the volcano. This family-friendly destination features numerous picnic spots, making it an ideal place to unwind and enjoy a meal amidst nature. The park also boasts various recreational activities such as ziplining, horseback riding, and eco-trails for exploring the lush greenery. The butterfly garden and flower-filled pathways further enhance the park's charm, making it a perfect spot for photography enthusiasts and nature lovers alike.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="Sky Ranch.jpg" alt="Sky Ranch">
+    <div class="card__content">
+      <p class="card__title">Treat Yourself to Sky Ranch Amusement Park</p>
+      <p class="card__description">Sky Ranch is an exciting amusement park in Tagaytay, offering a range of thrilling rides and attractions suitable for all ages. The park's most iconic attraction, the Sky Eye Ferris wheel, stands at a height of 63 meters (207 feet), providing a stunning panoramic view of the city and its surroundings. Other popular rides include the Super Viking, a giant swing ride, and the Log Coaster, a water ride perfect for cooling off on a hot day. In addition to the rides, Sky Ranch also features various food stalls, souvenir shops, and live performances, ensuring a fun-filled day for the entire family.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="People's Park in the Sky.jpg" alt="People's Park in the Sky">
+    <div class="card__content">
+      <p class="card__title">Admire the scenery in People's Park in the Sky</p>
+      <p class="card__description">People's Park in the Sky is a popular vantage point located on Mount Gonzales, offering breathtaking views of Tagaytay, Taal Lake, and the surrounding area. The park was initially intended to be a mansion for former Philippine President Ferdinand Marcos, but construction was never completed. Today, the unfinished structure stands as a historical relic, providing visitors with a glimpse into the country's past. The park features several viewpoints, gardens, and a statue of Our Lady, Queen of Peace. For those looking to explore further, a short hike to the highest point of the park will reward you with even more spectacular views.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="Sonya's Garden.jpg" alt="Sonya's Garden">
+    <div class="card__content">
+      <p class="card__title">Relax at Sonya's Garden</p>
+      <p class="card__description">Sonya's Garden is a serene haven nestled within the lush green landscape of Tagaytay. Known for its flower gardens, organic farm, and spa, this peaceful retreat is perfect for those seeking relaxation and rejuvenation. Visitors can stroll through the beautifully landscaped gardens, admiring the vibrant blooms and intoxicating scents of the various flowers and plants. The organic farm provides fresh produce used in the on-site restaurant, which serves delicious, healthy meals in a charming al fresco setting.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="Tagaytay Highlands.jpg" alt="Tagaytay Highlands">
+    <div class="card__content">
+      <p class="card__title">Exploring Tagaytay Highlands in the Heart of Tagaytay</p>
+      <p class="card__description">Tagaytay Highlands is an upscale resort and residential development situated in the city's mountainous region. This luxurious destination boasts two world-class golf courses, offering golf enthusiasts a chance to play a round amidst the stunning landscape. For those seeking leisurely pursuits, the resort also features a variety of recreational facilities such as swimming pools, a sports center, and a spa. Dining options abound, with a selection of restaurants catering to diverse culinary tastes.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="The Pink Sisters Chapel & Convent.jpg" alt="The Pink Sisters Chapel & Convent">
+    <div class="card__content">
+      <p class="card__title">Discovering The Pink Sisters Chapel & Convent Amidst Tagaytay's Serene Landscape</p>
+      <p class="card__description">The Pink Sisters Chapel & Convent is a peaceful Catholic retreat located in Tagaytay, known for its distinctive pink-painted walls and serene atmosphere. The convent is home to the contemplative order of the Holy Spirit Adoration Sisters, who are often referred to as the "Pink Sisters" due to their rose-colored habits. Visitors are welcome to attend mass, pray, or simply enjoy the quiet ambiance of the chapel. The tranquil grounds, adorned with flowers and statues, provide an ideal setting for meditation and reflection. While photography inside the chapel is not allowed, the picturesque exterior serves as a lovely backdrop for photos.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="Mahogany Market.jpg" alt="Mahogany Market">
+    <div class="card__content">
+      <p class="card__title">Unveiling Mahogany Market</p>
+      <p class="card__description">Mahogany Market is a popular destination in Tagaytay for shopping and sampling local delicacies. This lively market offers a wide range of fresh produce, souvenirs, and artisanal products, making it an ideal spot for those looking to bring home a piece of Tagaytay. The market is especially famous for its "bulalo" stalls, where visitors can enjoy a steaming bowl of this local beef marrow stew, a comforting dish perfect for the city's cool climate. Other popular food items include "tawilis," a freshwater sardine native to Taal Lake, and "suman," a sticky rice delicacy wrapped in banana leaves.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="Paradizoo.jpg" alt="Paradizoo Tagaytay">
+    <div class="card__content">
+      <p class="card__title">Visit the Local Zoo in Paradizoo Tagaytay</p>
+      <p class="card__description">When was the last time you’ve visited a zoo? If you want to visit some cute animals during your trip, stop by Paradizoo Tagaytay! It may not be as popular as other Tagaytay tourist spots, but it’s the only theme park and zoo concept in Tagaytay. It sits on 10 hectares of land and offers a variety of educational and outdoor outing programs for animal and nature lovers. You’ll learn about sheep-shearing, goat and cow milking, and also get to smell fragrant flowers blooming all around the farm! And how can you say no to those adorable animals?</div>
+  </div>
+
+  <div class="card">
+    <img src="Nurture Wellness Village.jpg" alt="Nurture Wellness Village">
+    <div class="card__content">
+      <p class="card__title">Take a Visit to Nurture Wellness Village</p>
+      <p class="card__description">If you’re craving for a distinctly Filipino way of relaxing, Nurture Wellness Village is one of the best places in Tagaytay for just that. Nurture Wellness Village takes pride in pioneering a Filipino-branded spa menu like their cult favorite ”Nilaib” massage which is their Filipino take on the hot stone massage to contrast the weather. Their trained and licensed therapists will ensure you have the best healing experience that you won’t find elsewhere.</div>
+  </div>
+</div>
+</div>
+
+<footer>
+  &copy; 2024 Tagaytay City
+</footer>
+<!-- Scroll to top button -->
+<button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+</body>
+</html>

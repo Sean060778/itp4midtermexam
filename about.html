@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  header, footer {
+    background-color: #266803;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+  }
+  header h1, header img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  nav {
+    background-color: #266803;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  nav a:hover {
+    background-color: #266803;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    flex-grow: 1; /* Fill remaining space */
+  }
+  h2, h3 {
+    color: #333;
+  }
+  p {
+    color: #555;
+  }
+  footer {
+    margin-top: auto; /* Push footer to the bottom */
+  }
+  /* Scroll to top button */
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #266803;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  #scrollToTopBtn:hover {
+    background-color: #266803;
+  }
+  /* Additional Styles */
+  .about-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .about-section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .mayor-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mayor-details p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .benefits-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Tagaytay City</h1>
+  <img src="Seal_of_Tagaytay_City_Logo.png" alt="Tagaytay City Logo" style="height: 50px;">
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="attractions.html">Attractions</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <div class="about-section">
+    <h2>About Tagaytay City</h2>
+    <p>Tagaytay is a popular holiday town south of Manila on the Philippine island Luzon. Known for its mild climate, it sits on a ridge above Taal Volcano Island, an active volcano surrounded by Taal Lake. Overlooking the area, People’s Park in the Sky occupies the grounds of a never-finished presidential mansion. Picnic Grove is a recreation area with trails and a zip line.</p>
+    <img src="TagaytayCity.jpg" alt="Tagaytay City">
+    <p>Tagaytay, which is officially called the City of Tagaytay, is a component city in Cavite province.</p>
+  </div>
+
+  <div class="about-section">
+    <h2>Location</h2>
+    <img src="Tagaytay_Map.png" alt="Antipolo Location Map">
+    <p>Tagaytay City is located in the province of Cavite, Philippines. It covers an area of approximately 65 square kilometers and has an elevation of 709 meters above sea level. The city is divided into several neighborhoods, including Maharlika East, Asisan, Dapdap West, Zambal, and more.</p>
+  </div>
+
+  <div class="about-section">
+    <h2>Mayor</h2>
+    <div class="mayor-details">
+      <img src="Mayor_of_Tagaytay.jpg" alt="Antipolo Mayor" style="width: 200px; height: auto;">
+      <p>The current mayor of Tagaytay City is Abraham Tolentino. He has been serving as the mayor since 2013 and is dedicated to the progress and development of the city.</p>
+    </div>
+  </div>
+
+  <div class="about-section">
+    <h2>Benefits of Exploring Tagaytay City</h2>
+    <ul class="benefits-list">
+      <li>Tagaytay has Less Pollution and More Green Spaces</li>
+      <li>Nearness to Metro Manila</li>
+      <li>Scenic Views and Tourist Destinations</li>
+      <li>Accessibility to Essential Amenities and Leisure Spots</li>
+      <li>High Market Value of Luxury Real Estate Properties</li>
+      <li>Crown Asia’s first and only condominium development in Tagaytay City</li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  &copy; 2024 Tagaytay City
+</footer>
+
+<!-- Scroll to top button -->
+<button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+</body>
+</html>
